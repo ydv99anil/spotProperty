@@ -22,18 +22,17 @@ const Home = () => {
 
   const filteredProperties = propertiesData.filter((property) => {
     const city = selectedCity.toLowerCase();
-    const propertyCity = property.location.split(',')[1]?.trim().toLowerCase() || '';
-
-    const cityMatch = city === '' || propertyCity === city;
+    const location = property.location.toLowerCase();
+  
+    const cityMatch = city === '' || location.includes(city);
     const priceMatch =
       selectedPrice === '' ||
       (selectedPrice === 'above'
-      ? parsePrice(property.price) > 15000000
-      : parsePrice(property.price) <= parseInt(selectedPrice));
-
-    const searchMatch = searchQuery === '' || property.location.toLowerCase().includes(searchQuery.toLowerCase());
+        ? parsePrice(property.price) > 15000000
+        : parsePrice(property.price) <= parseInt(selectedPrice));
+    const searchMatch = searchQuery === '' || location.includes(searchQuery.toLowerCase());
     const flatTypeMatch = flatType === '' || property.flatType === flatType;
-
+  
     return cityMatch && priceMatch && searchMatch && flatTypeMatch;
   });
 

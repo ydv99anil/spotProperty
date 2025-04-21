@@ -11,9 +11,7 @@ const FilterBar = ({ selectedCity, setSelectedCity, selectedPrice, setSelectedPr
         <option value="Bangluru">Bangluru</option>
         <option value="Hydrabad">Hydrabad</option>
         <option value="Jaipur">Jaipur</option>
-        <option value="Pune">Pune</option>
         <option value="Gujrat">Gujrat</option>
-        <option value="Ahemdabad">Ahemdabad</option>
         <option value="Lucknow">Lucknow</option>
       </select>
 
