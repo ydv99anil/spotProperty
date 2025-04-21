@@ -12,7 +12,7 @@ const propertiesData = [
       id: 2,
       flatType: "3BHK",
       title: 'Luxury 3BHK with Pool View in Bangalore',
-      location: 'Sector 62, Banglore',
+      location: 'Sector 62, Bangluru',
       price: '₹2.5 Cr',
       description: 'A luxurious 3BHK apartment offering a serene swimming pool view, high-rise comfort, and gated community security in the heart of Bangalore.',
       image: "https://images.pexels.com/photos/24807124/pexels-photo-24807124/free-photo-of-table-armchair-and-benches-on-house-terrace-with-pool.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

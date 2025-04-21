@@ -8,7 +8,13 @@ const FilterBar = ({ selectedCity, setSelectedCity, selectedPrice, setSelectedPr
         <option value="Mumbai">Mumbai</option>
         <option value="Pune">Pune</option>
         <option value="Delhi">Delhi</option>
-        <option value="Bangalore">Bangalore</option>
+        <option value="Bangluru">Bangluru</option>
+        <option value="Hydrabad">Hydrabad</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Pune">Pune</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="Ahemdabad">Ahemdabad</option>
+        <option value="Lucknow">Lucknow</option>
       </select>
 
       <select value={selectedPrice} onChange={(e) => setSelectedPrice(e.target.value)} className="p-2 border rounded">
